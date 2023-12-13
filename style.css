@@ -23,10 +23,15 @@ body {
 
 .preview {
     width: 10%;
-    margin-left: 17%;
+    margin-left: 4%;
     border: 10px solid black;
 }
 
 img {
     width: 95%;
+}
+
+.img-expand {
+    transition: .7s;
+    width: 90px;
 }
