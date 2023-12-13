@@ -27,3 +27,22 @@ function upDate(previewPic){
         document.getElementById('image').innerHTML = "Hover over an image below to display here";
       
        }
+
+
+window.addEventListener("load" , function(){
+    X = document.getElementById('image');
+    for(let i=0; i<x.length; i++){
+        x[i].addEventListener("focus", onFouced)
+        x[i].addEventListener("blur", onBlur)
+    }
+});
+
+function onBlur(){
+    alert("Input field lost focus.");
+    unDo();
+}
+
+function onFouced(){
+    const previewPic = this;
+    upDate();
+}
